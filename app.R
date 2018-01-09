@@ -119,6 +119,9 @@ server <- function(input, output) {
   observeEvent(input$submit, {
     wrong_pw_submitted(!ok())
   })
+  observeEvent(input$log_out, {
+    wrong_pw_submitted(FALSE)
+  })
   output$incorrect_password_text <- renderText({
     wps <- wrong_pw_submitted()
     okay <- ok()
