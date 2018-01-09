@@ -5,6 +5,18 @@ An example shiny app with user/password authentication
 
 This is a minimal shiny app which exhibits how unique users/passwords can be used.
 
+## How
+
+The app starts with a limited sidebar menu, including a space to enter log-in information.
+
+![pre](img/pre.png)
+
+Once logged in, the sidebar expands (note the "About" menu item), and the tab contents changes.
+
+![post](img/post.png)
+
+Reactive objects such as `ok()` and `user()` are generated dynamically so as to track whether the log-in is successful and what the user name is, respectively.
+
 ## Why  
 
 Because sometimes (a) you only want some people to access your shiny app, and/or (b) a user's identity is important to the app's functionality.
