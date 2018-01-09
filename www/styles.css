@@ -1,0 +1,19 @@
+
+
+.main-header .logo {
+  /* font-family: "Georgia", Times, "Times New Roman", serif; */
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.vis-timeline .customtime {
+  pointer-events: none;
+  background-color: black;
+  width: 20px;
+}
+
+.vis-custom-time{
+  width:2px;
+  cursor:move;
+  z-index:1
+}
