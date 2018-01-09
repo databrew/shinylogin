@@ -140,7 +140,7 @@ server <- function(input, output) {
     out <- FALSE
     un <- input$username
     pw <- input$password
-    if(!is.null(username) & !is.null(password)){
+    if(!is.null(un) & !is.null(pw)){
       the_password <- users %>%
         filter(username == un) %>%
         .$password
